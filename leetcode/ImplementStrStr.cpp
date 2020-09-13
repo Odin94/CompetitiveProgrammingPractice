@@ -10,9 +10,6 @@ class Solution {
         if (needle.empty())
             return 0;
 
-        if (needle.size() > haystack.size())
-            return -1;
-
         for (int i = 0; i < haystack.size(); i++) {
             if (needle.size() > haystack.size() - i)
                 return -1;
